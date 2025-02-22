@@ -20,20 +20,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-<<<<<<< HEAD
+
 SECRET_KEY = 'django-insecure--g4$kp*!7%*+-%dkl6ejhm81t36onvzgkvnpt1-_ji_pb^3ozy'
-=======
-SECRET_KEY = 'django-insecure-%0$=nekzhk@(9!2z@wr_k$u8b0iywc%6@n#sg!wl05$0^_^jof'
->>>>>>> 338c50f655f9971c9a82d934fd9ad4ac666bc022
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-<<<<<<< HEAD
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.pythonanywhere.com']
-=======
-ALLOWED_HOSTS = []
->>>>>>> 338c50f655f9971c9a82d934fd9ad4ac666bc022
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'sartyhale.pythonanywhere.com', '.pythonanywhere.com']
+
+
 
 
 # Application definition
@@ -45,11 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
     'portfolio',
-=======
     'blog',
->>>>>>> 338c50f655f9971c9a82d934fd9ad4ac666bc022
 ]
 
 MIDDLEWARE = [
@@ -116,12 +108,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-<<<<<<< HEAD
-LANGUAGE_CODE = 'en-GB'
-=======
-LANGUAGE_CODE = 'en-us'
->>>>>>> 338c50f655f9971c9a82d934fd9ad4ac666bc022
 
+LANGUAGE_CODE = 'en-GB'
 TIME_ZONE = 'Africa/Bujumbura'
 
 USE_I18N = True
@@ -132,14 +120,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
-<<<<<<< HEAD
-STATIC_ROOT= BASE_DIR / 'static'
-
-=======
-STATIC_ROOT = BASE_DIR / 'static'
->>>>>>> 338c50f655f9971c9a82d934fd9ad4ac666bc022
+STATIC_URL = '/static/'
+STATIC_ROOT = '/home/sartyhale/fashion/static'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/home/sartyhale/fashion/media'

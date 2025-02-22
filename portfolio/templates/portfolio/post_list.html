@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarty's Fashion Blog</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2707A;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .header-container {
+            width: 100%;
+            padding: 20px 0;
+            font-family: 'Roboto Condensed', sans-serif; /* Apply the sharp font here */
+        }
+
+        /* Header styling */
+        h1 {
+            font-size: 3em;
+            color: black;
+            margin-top: 20px; /* Adds a little space at the top */
+        }
+
+        /* Tagline styling */
+        p.tagline {
+            font-size: 1.2em;
+            color: black;
+            margin-top: 10px;
+        }
+
+        /* Divider styling */
+        .divider {
+            width: 100%;
+            height: 1px;
+            background-color: #ccc;
+            margin: 20px 0;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p.tagline {
+                font-size: 1em;
+            }
+        }
+        /* Container for buttons with horizontal scroll */
+        .button-container {
+            display: flex;
+            overflow-x: auto; /* Enables horizontal scrolling */
+            padding: 10px;
+            white-space: nowrap; /* Prevents wrapping of buttons */
+        }
+
+        /* Styling for each button */
+        .button-container button {
+            background-color: #f23a56;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* First button styling */
+        .button-container button:first-child {
+            width: 120px; /* Rectangular shape */
+        }
+
+        /* Hover effect */
+        .button-container button:hover {
+            background-color: #e8beb0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <h1>Sarty's Fashion Blog</h1>
+        <p class="tagline">Where style meets passion and creativity.</p>
+    </div>
+    <div class="divider"></div>
+
+    <!-- Horizontal scrollable button container -->
+    <div class="button-container">
+        <button>2025</button>
+        <button>2026</button>
+        <button>2027</button>
+        <button>2028</button>
+        <button>2029</button>
+        <button>2030</button>
+        <!-- Add more buttons if needed -->
+    </div>
+</body>
+</html>
